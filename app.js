@@ -7,14 +7,14 @@ let allprodect = [];
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-
-  function prodict(name , type){
-      this.name = name;
-      this.type = type;
-      this.price = getRndInteger(100, 300);
-      allprodect.push(this);
-  }
-
+  
+    function prodict(name , type){
+            this.name = name;
+            this.type = type;
+            this.price = getRndInteger(100, 300);
+            allprodect.push(this);
+        }
+      
   function render(){
       for (let i = 0; i < allprodect.length; i++) {
           let tr = table.appendChild(document.createElement('tr'));
@@ -31,9 +31,9 @@ function getRndInteger(min, max) {
   }
 
 
-  form.addEventListener('submit', coll);
-  function coll(event){
-      event.preventDefualt();
+  form.addEventListener('submit', sub);
+  function sub(event){
+    event.preventDefault()
       
       let name = event.target.name.value;
       let select = event.target.select.value;
