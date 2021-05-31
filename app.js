@@ -183,4 +183,10 @@ console.log(arrayOfWishLists);
 //   return count;
 // }
 // console.log(greaterThan([1, 2, 3, 4], 2));
+
+// function deleteTodo(e) {
+//   toDoArr.splice(e, 1);
+//   localStorage.todos = JSON.stringify(toDoArr);
+//   render();
+// }
 // console.log(greaterThan([2, 4, 8], 8));
