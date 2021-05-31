@@ -1,27 +1,4 @@
 'use strict'
-//TODO it to take the items/input fields from the form
-//TODO to store these items as objects inside my local
-   //1- create a constuctor (are used to create objects)
-   //2-store the items from local storage
-//TODO render added item to the table
-//TODO after refreshing the page the table should render the items in the local storage if theres any
-   // 1- check if the local storage has any items
-   //2- populate the arrayof wishlist with the items from the LS
-   //3- render the table with items from the LS
-
-//TODO render the tables headers from the js part
-  //TODO 1- create a function that will render the table headers
-  //TODO 2- this table headers need to render each time i refresh the page
-
-
-////TODO set a price and calculate total
-   //1-generate a random number between 500-1000
-   //2- set for each object a random price
-   //3- to calculate the total all the items in the wishlist
-   //4- render the total item in the wishlist
-////TODO TO REMOVE ANY ITEM FROM THE LIST
-
-
 ////////////////////Global variables//////////////////////////
 let ourForm = document.getElementById('wishlist-form');
 let ourParentTable = document.getElementById('wishlist-table');
@@ -49,7 +26,7 @@ Wishlist.prototype.renderItem = function(){
     itemQuantityTd.textContent = this.quantity;
 
     let itemPriceTd =document.createElement('td');
-    itemPriceTd.textContent = '';
+    itemPriceTd.textContent = this.price;
 
     wishlistRow.appendChild(itemNameTd);
     wishlistRow.appendChild(itemQuantityTd);
