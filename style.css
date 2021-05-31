@@ -1,0 +1,67 @@
+/* 
+
+1- to have background image for the whole page
+2- to have a welcoming banner 
+3- style the form and the table 
+4- the form and the table should be on 50 50
+add padding and margins accordingly
+
+
+*/
+
+body{
+    background-image: url(two-goats.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  header{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+  
+    margin-bottom: 40px;
+  }
+  
+  main{
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .form-div{
+    width: 30%;
+    float: left;
+    background-color: blue;
+    height: 200px;
+    margin-left: 200px;
+    margin-right: 60px;
+    margin-top: 50px;
+  
+  
+  }
+  
+  .list-div{
+    float: right;
+    width: 30%;
+    background-color: blue;
+    height: 200px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+    width: 40%;
+  }
+  
+  table{
+    margin: auto;
+  
+  }
+  th, td{
+    border: 5px solid;
+    border-color: rgb(0, 0, 0) ;
+    text-align: center;
+    padding: 10px;
+  }
+  #total{
+    text-align: center;
+  }
