@@ -64,16 +64,6 @@ Wishlist.prototype.renderItem = function(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
 ////////////////////////functions///////////////////////////////
 function handleFormSubmission(event){
     event.preventDefault();  // prevent the defualt behavoir of the form
@@ -159,20 +149,38 @@ function generateRandomNumber(quantity){
 }
 
 
-
-
-
-
-
-
-
 ///////////our function calls and event listeners///////////////
 ourForm.addEventListener('submit',handleFormSubmission);
-
-
-
-
 
 renderHeader();
 checkLS();
 console.log(arrayOfWishLists);
+
+
+
+
+
+
+// function stars(num) {
+//   var resulte = '';
+//   var string = '';
+//   for (let i = 0; i < num; i++) {
+//     string += '*';
+//     resulte += `${string} \n`;
+//   }
+//   return resulte;
+// }
+// console.log(stars(5));
+
+
+// function greaterThan(arr, num) {
+//   var count = 0;
+//   for (let i in arr) {
+//     if (arr[i] > num) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(greaterThan([1, 2, 3, 4], 2));
+// console.log(greaterThan([2, 4, 8], 8));
