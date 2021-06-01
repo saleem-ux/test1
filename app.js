@@ -2,8 +2,8 @@
 ////////////////////Global variables//////////////////////////
 let ourForm = document.getElementById('wishlist-form');
 let ourParentTable = document.getElementById('wishlist-table');
-let headerContentArr = ['Item Name', 'Quantity', 'category', 'price'];
 let total = document.getElementById('total');
+let headerContentArr = ['Item Name', 'Quantity', 'category', 'price'];
 let arrayOfWishLists = [];
 
 function Wishlist(name, category, quantity){
@@ -41,7 +41,7 @@ Wishlist.prototype.renderItem = function(){
 }
 
 
-////////////////////////functions///////////////////////////////
+ourForm.addEventListener('submit',handleFormSubmission);
 function handleFormSubmission(event){
     event.preventDefault();  // prevent the defualt behavoir of the form
     // alert('form submitted');      // //test
@@ -125,18 +125,23 @@ function generateRandomNumber(quantity){
 
 }
 
-
-///////////our function calls and event listeners///////////////
-ourForm.addEventListener('submit',handleFormSubmission);
-
 renderHeader();
 checkLS();
 console.log(arrayOfWishLists);
+//=======================================================================
+// function Employe (email,depart){
+//     this.id=Users.length+1;
+//     this.email=email;
+//     this.name=email.substring(0, email.lastIndexOf("@"));
+//     this.depart=depart;
+//     this.price=getRndInteger();
+    // this.img1=' ';
 
-
-
-
-
+    // function deleteTodo(e) {
+//   toDoArr.splice(e, 1);
+//   localStorage.todos = JSON.stringify(toDoArr);
+//   render();
+// }
 
 // function stars(num) {
 //   var resulte = '';
@@ -160,10 +165,4 @@ console.log(arrayOfWishLists);
 //   return count;
 // }
 // console.log(greaterThan([1, 2, 3, 4], 2));
-
-// function deleteTodo(e) {
-//   toDoArr.splice(e, 1);
-//   localStorage.todos = JSON.stringify(toDoArr);
-//   render();
-// }
 // console.log(greaterThan([2, 4, 8], 8));
